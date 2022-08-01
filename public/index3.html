@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+    <link rel="stylesheet" href="/src/main.css" />
+    <title>Samsung</title>
+  </head>
+  <!-- comment commit -->
+  <body class="page">
+    <header class="page__header">
+      <a class="image__link" href="index.html"><h2>Minha Loja</h2></a>
+      <button class="button" data-open-sidebar>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </header>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar__header">
+        <button class="button" data-close-sidebar>close</button>
+      </div>
+      <div class="sidebar__body"><p>Oi, eu sou uma barra lateral</p></div>
+    </aside>
+    <main class="page__main-content">
+      <h3 class="page__title">Smartphones</h3>
+      <div class="products-list__item-thumbnail">
+        <img
+          class="product__thumbnail"
+          src="https://m.media-amazon.com/images/I/716+SQdPpQL._AC_SX679_.jpg"
+          alt="Smartphone Samsung Galaxy A23 Azul 128GB 4GB RAM bateria 5000mAh Câmera Quádrupla Traseira de 50MP"
+        />
+      </div>
+      <div class="products-list__item-main-content">
+        <h4 class="product__name">
+          Smartphone Samsung Galaxy A23 Azul 128GB 4GB RAM bateria 5000mAh
+          Câmera Quádrupla Traseira de 50MP
+        </h4>
+        <p class="product__description">
+          O novo Galaxy A23 combina cores elegantes e suavidade ao toque.
+        </p>
+      </div>
+      <div class="modal" data-modal="2">
+        <div class="modal__container">
+          <div class="modal__header">
+            <h2>
+              Smartphone Samsung Galaxy A23 Azul 128GB 4GB RAM bateria 5000mAh
+              Câmera Quádrupla Traseira de 50MP
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
