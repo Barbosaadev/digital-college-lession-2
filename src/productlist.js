@@ -34,7 +34,7 @@ function listRender() {
     ul__list.insertAdjacentHTML(
       'afterbegin',
 
-      `<li class="products-list__item">
+    `<li class="products-list__item">
         <div class="products-list__item-thumbnail">
           <a href="${config.target}">
             <img
@@ -54,7 +54,7 @@ function listRender() {
         <div class="products-list__item-action-buttons">
           <button class="button" data-open-modal="1">Detalhes</button>
         </div>
-        <div class="modal" data-modal="1">
+      <div class="modal" data-modal="1">
         <div class="modal__container">
           <div class="modal__header">
             <h2>${config.modelo}</h2>
@@ -85,7 +85,7 @@ function listRender() {
           </div>
         </div>
       </div>
-      </li>`
+    </li>`
     )
   })
 }

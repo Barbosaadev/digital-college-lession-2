@@ -309,3 +309,35 @@ html {
   color: #fff;
   border-radius: 5px;
 }
+
+.sidebarmodal__header-title{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.sidebarmodal__input-name{
+  text-align: center;
+}
+
+.sidebarmodal__input{
+  display: flex;
+  margin: 0 auto;
+}
+
+.sidebarmodal__input-last{
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.confirm__button{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 30%;
+  height: 2em;
+  border: 1px solid #181c1e;
+  background-color: #181c1e;
+  color: #fff;
+  border-radius: 5px;
+}
