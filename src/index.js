@@ -9,3 +9,4 @@ const renderHandler = renderUI()
 
 modalHandler.init()
 sidebarHandler.init()
+renderHandler.init()

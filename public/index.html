@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
-    <title>Digital College - Fullstack</title>
-  </head>
-  <body class="page">
-    <header class="page__header">
-      <a class="image__link" href="index.html"><h2>Minha Loja</h2></a>
-      <button class="button" data-open-sidebar>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="2"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
-    </header>
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar__header">
-        <button class="button" data-close-sidebar>close</button>
-      </div>
-      <div class="sidebar__body"><button class="sidebar__button">Adicionar Smartphone</button></div>
-      <div class="sidebarmodal" data-sidebarmodal="1">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
+  <title>Digital College - Fullstack</title>
+</head>
+
+<body class="page">
+  <header class="page__header">
+    <a class="image__link" href="index.html">
+      <h2>Minha Loja</h2>
+    </a>
+    <button class="button" data-open-sidebar>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </header>
+  <aside class="sidebar" data-sidebar>
+    <div class="sidebar__header">
+      <button class="button" data-close-sidebar>close</button>
+    </div>
+    <div class="sidebarmodal__button-container"><button class="sidebarmodal__button">Adicionar Smartphone</button></div>
+  </aside>
+  <main class="page__main-content">
+    <h3 class="page__title">Smartphones</h3>
+    <ul class="products-list" id="ul__container"></ul>
+    <div class="sidebarmodal" data-sidebarmodal="1">
         <div class="sidebarmodal-container">
-          <div class="sidebarmodal">
+          <div class="sidebarmodal__body">
             <h3 class="sidebarmodal__header-title">Adicionar Smartphone</h3>
-            <p class="sidebarmodal__input-name">Modelo</p><input type="text" name="modelo" class="sidebarmodal__input" id="inputModel">
-            <p class="sidebarmodal__input-name">Nome</p><input type="text" name="nome" class="sidebarmodal__input" id="inputName">
-            <p class="sidebarmodal__input-name">Marca</p><input type="text" name="marca" class="sidebarmodal__input-last" id="inputBrand">
-            <button class="confirm__button">Adicionar</button>
-          </div>
+            <p class="sidebarmodal__input-name">Modelo</p><input type="text" name="modelo" class="sidebarmodal__input"
+            id="inputModel">
+            <p class="sidebarmodal__input-name">Nome</p><input type="text" name="nome" class="sidebarmodal__input"
+              id="inputName">
+            <p class="sidebarmodal__input-name">Marca</p><input type="text" name="marca" class="sidebarmodal__input-last"
+            id="inputBrand">
+            <button class="add__button">Adicionar</button>
         </div>
       </div>
-    </aside>
-    <main class="page__main-content">
-      <h3 class="page__title">Smartphones</h3>
-      <ul class="products-list" id="ul__container"></ul>
-    </main>
-    <footer class="page__footer"></footer>
-  </body>
+    </div>
+  </main>
+  <footer class="page__footer"></footer>
+</body>
+
 </html>
