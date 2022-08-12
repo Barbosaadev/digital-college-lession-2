@@ -25,14 +25,19 @@
     <div class="sidebar__header">
       <button class="button" data-close-sidebar>close</button>
     </div>
-    <div class="sidebarmodal__button-container"><button class="sidebarmodal__button">Adicionar Smartphone</button></div>
+    <div class="sidebarmodal__button-container">
+      <button class="button" data-open-sidebarModal>Adicionar Smartphone</button>
+    </div>
   </aside>
   <main class="page__main-content">
     <h3 class="page__title">Smartphones</h3>
     <ul class="products-list" id="ul__container"></ul>
-    <div class="sidebarmodal" data-sidebarmodal="1">
+    <div class="sidebarmodal sidebarmodal--open" id="sidebarmodal--container" data-sidebarModal>
         <div class="sidebarmodal-container">
           <div class="sidebarmodal__body">
+            <div class="close__button--container">
+              <button class="button close__button-sidebarmodal" data-close-sidebarModal>Close</button>
+            </div>
             <h3 class="sidebarmodal__header-title">Adicionar Smartphone</h3>
             <p class="sidebarmodal__input-name">Modelo</p><input type="text" name="modelo" class="sidebarmodal__input"
             id="inputModel">
@@ -40,7 +45,7 @@
               id="inputName">
             <p class="sidebarmodal__input-name">Marca</p><input type="text" name="marca" class="sidebarmodal__input-last"
             id="inputBrand">
-            <button class="add__button">Adicionar</button>
+            <button class="button">Adicionar</button>
         </div>
       </div>
     </div>

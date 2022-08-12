@@ -1,12 +1,12 @@
 export function Sidebar() {
   function _onClickOpenSidebarButton(e) {
-    openSibar()
+    openSidebar()
   }
 
   function _onClickCloseSidebarButton(e) {
     closeSidebar()
   }
-  // comment commit
+
   function _startOpenSidebarButtonEvtListener() {
     const openSidebarButton = document.querySelector('[data-open-sidebar]')
     if (openSidebarButton) {
@@ -22,13 +22,14 @@ export function Sidebar() {
     }
   }
 
-  function openSibar() {
+  function openSidebar() {
     const sidebar = document.querySelector('[data-sidebar]')
     document.body.style.overflow = 'hidden'
     if (sidebar) {
       sidebar.classList.add('sidebar--open')
     }
   }
+
   function closeSidebar() {
     const sidebar = document.querySelector('[data-sidebar]')
     document.body.style.overflow = ''
@@ -46,7 +47,7 @@ export function Sidebar() {
 
   return {
     init,
-    openSibar,
+    openSidebar,
     closeSidebar
   }
 }

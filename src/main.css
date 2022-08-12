@@ -297,6 +297,7 @@ html {
 .add__button {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 15px;
   padding: 5px;
   justify-content: center;
   width: 10%;
@@ -310,7 +311,7 @@ html {
 .sidebarmodal {
   background-color: #000000a9;
   position: fixed;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -337,4 +338,24 @@ html {
   overflow: hidden;
   max-width: 640px;
   margin: 0;
+}
+
+.sidebarmodal__close-button{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  background-color: #181c1e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.close__button--container{
+  display: flex;
+  justify-content: right;
 }
