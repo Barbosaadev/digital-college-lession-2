@@ -377,6 +377,8 @@ html {
 .header__items a {
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .button__hid {
