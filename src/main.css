@@ -359,3 +359,76 @@ html {
   display: flex;
   justify-content: right;
 }
+
+.menu__ulcontainer-flex{
+  display: flex;
+  justify-content: right;
+}
+
+.header__list{
+  display: flex;
+}
+
+.header__items{
+  list-style: none;
+  padding-left: 40px;
+}
+
+.header__items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button__hid {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  background-color: #181c1e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+.title__container{
+  display: flex;
+  justify-content: left;
+}
+
+.sidebar__ul{
+  margin-top: 50px;
+}
+
+.sidebar__items{
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.sidebar__items a {
+  color: #181c1e;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1600px) {
+  .button__hid{
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu__ulcontainer-flex{
+    visibility: hidden;
+    display: none;
+  }
+
+  .button__hid{
+    visibility: visible;
+    display: inline;
+  }
+}

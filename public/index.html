@@ -11,10 +11,15 @@
 
 <body class="page">
   <header class="page__header">
+    <div class="title__container">
     <a class="image__link" href="index.html">
       <h2>Minha Loja</h2>
     </a>
-    <button class="button" data-open-sidebar>
+  </div>
+    <div class="menu__ulcontainer-flex">
+      <ul class="header__list" id="menu__container"></ul>
+    </div>
+    <button class="button button__hid" data-open-sidebar>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="currentColor"
         stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -27,6 +32,9 @@
     </div>
     <div class="sidebarmodal__button-container">
       <button class="button" data-open-sidebarModal>Adicionar Smartphone</button>
+    </div>
+    <div class="sidebar__ul-container">
+      <ul class="sidebar__ul" id="sidebar__menu"></ul>
     </div>
   </aside>
   <main class="page__main-content">
